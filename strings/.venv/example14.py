@@ -1,0 +1,1 @@
+print('In %d years I have spotted %g %s.'%(3,0.1,'camels'))
