@@ -1,4 +1,5 @@
 states_of_america = ['Delawere', 'Pennsylvania', 'Washington', 'Florida']
 
-states_of_america[1] = 'Illinois'
-print(states_of_america)
+num_of_states = len(states_of_america)
+print(num_of_states)
+print(states_of_america[num_of_states-1])
