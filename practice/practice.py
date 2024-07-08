@@ -1,18 +1,29 @@
-fname = input('Enter file name')
+import sys
+import random
 
-try:
-    fhand = open(fname)
-except:
-    print('File can not be opened: '.fname)
-    exit()
+print("")
+playerchoice = input("Enter...\n1 for Rock, \n2 for Paper, or\n3 for Scissors:\n\n")
 
-counts = dict()
-for line in fhand:
-    words = line.split()
-    for word in words:
-        if word not in counts:
-            counts[word] = 1
-        else:
-            counts[word]  += 1
-print(counts)
+player = int(playerchoice)
+
+if player < 1 | player > 3 :
+    sys.exit("You must enter 1,2 or 3")
+
+
+
+
+computerchoice = random.choice("123")
+
+computer = int(computerchoice)
+
+print("")
+print("You chose" + playerchoice + ".")
+print("Python chose " + computerchoice + ".")
+print("")
+
+
+if player == 1 and computer ==3 :
+    print("You Win!")
+else:
+    print("Python wins")
 
